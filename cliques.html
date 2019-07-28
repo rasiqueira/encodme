@@ -1,0 +1,95 @@
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Contador de Cliques de URL</title>
+<meta name="description" content="O contador de clique mostra em tempo real quantos cliques sua URL encurtada recebeu até agora.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body{margin:0;background:#f9f9f9;font:14px arial,tahoma}h1{margin:0;font:bold 36px 'maven pro',arial;color:#333;letter-spacing:-1px}h2{margin:0;font:bold 26px 'maven pro',arial;color:#333;letter-spacing:-1px}h3{margin:0;font:bold 22px 'maven pro',arial;color:#333;letter-spacing:-1px}p{font:15px arial,tahoma;color:#000;line-height:1.5;text-align:left}a{color:#006cff;text-decoration:none}a:hover{text-decoration:underline}b{opacity:.8}ul{list-style:none;margin:0;padding:0}li{color:#000}img{max-width:100%;height:auto;vertical-align:middle}input[type=text],textarea{vertical-align:middle;border-radius:3px;border:1px solid #dfdfdf;color:#444}input[type=submit]{font:16px arial,tahoma;height:36px;vertical-align:middle}.logo{font:bold 40px arial,tahoma;color:#222;word-wrap:break-word}.textsmall{font-size:13px}.textmedium{font-size:14px}.textbig{font-size:15px}.alignleft{text-align:left}.aligncenter{text-align:center}.alignright{text-align:right}.colorbutton,.colorbutton:hover{background:#2c87c5;font:16px 'maven pro',arial;color:#fff;padding:8px 12px;border-radius:3px;text-decoration:none}.list{line-height:1.5;background:url(img/icone-lista.png) no-repeat left;padding:0 0 0 35px}header{text-align:center}header #top{background:#fff;box-shadow:0 1px 4px #ccc}header #logo{padding:25px 20px 20px}header a.logo{font:bold 38px arial,tahoma;color:#222;text-transform:uppercase;vertical-align:middle}nav ul{list-style:none;margin:0;padding:0 20px;background:#444}nav ul li{display:inline-block;padding:16px 20px}nav ul li a{color:#fff}main{display:block;margin:0 auto 0 auto;padding:0 20px;max-width:1000px}section#urlbox{margin:0 auto 20px auto;max-width:758px;box-shadow:0 1px 4px #ccc;border-radius:2px;padding:10px 30px 5px;background:#fff;text-align:center}section#urlbox h1{margin:10px auto 30px auto}section .boxtextcenter{margin:10px auto 40px;text-align:center;max-width:620px}section .boxtextleft{padding:0 50px;word-wrap:break-word}section#content{max-width:720px;margin:30px auto 20px}section .squarebox{display:inline-block;background:#fff;padding:20px 40px;border-radius:3px;font:60px 'maven pro',arial}#formurl{display:table;max-width:600px;margin:0 auto}#formurl input[type=text]{display:table-cell;width:100%;height:56px;padding:10px 16px;font:17px lato,arial;color:#000;background:#fff;border:1px solid #bbb;border-right:0;border-radius:3px;border-bottom-right-radius:0;border-top-right-radius:0;box-sizing:border-box}#formurl #formbutton{display:table-cell;width:1%;box-sizing:border-box;vertical-align:middle}#formurl input[type=button],#formurl input[type=submit]{height:56px;padding:10px 16px;font:bold 17px lato,arial;color:#fff;background-color:#2c87c5;text-align:center;vertical-align:middle;cursor:pointer;white-space:nowrap;border:0;border-radius:3px;border-top-left-radius:0;border-bottom-left-radius:0;margin-left:-1px;-webkit-appearance:button;margin:0}#balloon{background:#333;font:13px 'maven pro',arial;color:#fff;padding:8px;text-align:center;border-radius:3px;white-space:nowrap;float:right;margin:4px 0}footer{text-align:center;font:16px 'maven pro',arial,tahoma;color:#eee;background:#333;width:100%;border-top:5px solid #00a0db;padding:20px 0 110px;line-height:1.5}footer #footerbox{padding:0 10px}footer ul{display:inline-block;list-style:none}footer ul li{display:inline;padding:4px}footer ul li a{color:#0089ff}html{position:relative;min-height:100%}body{margin-bottom:200px}footer{position:absolute;bottom:0;height:40px}@media all and (max-width:499px){main{padding:0 10px}header a.logo{font:bold 29px arial,tahoma;vertical-align:middle}section .boxtextleft{padding:0 10px;word-wrap:break-word}}#formbox{max-width:400px;margin:20px 0;padding:10px 40px 10px 20px;font:17px lato,arial;color:#222;background-color:#fff;text-align:left;border-radius:6px;box-shadow:0 1px 4px #ccc}input[type=email],input[type=text],textarea{font:16px 'maven pro',arial;padding:8px;vertical-align:middle;border-radius:1px;border:1px solid #b6b6b6;box-shadow:inset 0 1px 2px rgba(0,0,0,.1),0 -1px 1px #fff,0 1px 0 #fff}input[name=submit]{height:35px;padding:0 12px;font:normal 16px lato,arial;color:#fff;background-color:#2c87c5;text-align:center;vertical-align:middle;cursor:pointer;white-space:nowrap;border:0;border-radius:3px}#button{text-align:right}.formtext{font:18px lato,arial;color:#222}*{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}#row:after{display:table;content:"";clear:both}#column{float:left;width:33.33%;min-height:210px;padding:0 10px;text-align:center}.socialnetworkbox{display:block;margin:2px}.snb{padding:8px 10px;margin:0 1px 0 0;font:14px lato,arial;color:#fff;text-align:center;background-color:#3b5998;cursor:pointer;border-radius:2px;display:inline-block;margin-bottom:4px}.snb:hover{text-decoration:none}.snbfacebook{background:#3b5998}.snbtwitter{background:#55acee}.snbpinterest{background:#d4374f}.snbtumblr{background:#243a4f}.snbwhatsapp{background:#16b75b}@media all and (min-width:768px){.snbwhatsapp{display:none}}#adbox{margin:30px auto;text-align:center}#adbox160x600{width:160px;margin:30px auto;text-align:center}#adbox300x250{width:300px;margin:30px auto;text-align:center}#adbox300x600{width:300px;margin:30px auto;text-align:center}#adbox320x50{width:320px;margin:30px auto;text-align:center}#adbox728x90{width:728px;margin:30px auto;text-align:center}@media all and (max-width:499px){.ad{width:320px;height:100px}}@media all and (min-width:500px) and (max-width:769px){.ad{width:468px;height:60px}}@media all and (min-width:770px) and (max-width:999px){.ad{width:728px;height:90px}}@media all and (min-width:1000px){.ad{width:970px;height:90px}}</style>
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<header>
+<div id="top">
+<div id="logo"><a href="https://encod.me/"><img src="{{url_for('static', filename='logo.png')}}"  alt="ENCOD.ME - Encurtar um link"></a></div>
+</div>
+</header>
+<main>
+<section id="content">
+<h1>Contador de Cliques da URL</h1>
+<p>Digite a URL curta abaixo para descobrir quantos cliques ela recebeu até agora.</p>
+</section>
+<section id="urlbox">
+<br><br>
+<form action="contador-de-cliques-da-url" method="post">
+<div id="formurl">
+<input type="text" name="u" placeholder="Digite aqui sua URL encurtada">
+<div id="formbutton">
+<input type="submit" value="Contar Cliques">
+</div>
+</div>
+</form>
+ {% for error in errors %}
+            <h4>{{ error }}</h4>
+          {% endfor %}
+          <br>
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+          {% if numero %}
+            <h2>Numero de cliques</h2>
+            <br>
+            <div id="results">
+              <table class="table table-striped" style="max-width: 300px;" align="center">
+                <thead>
+                  <tr>
+                    
+                  </tr>
+                
+                  <tr>
+                    <a>{{ numero }}</a>
+                 </tr>
+                
+              </table>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+<p style="padding: 0 50px;">Exemplo: encod.me/DeFgH</p>
+</section>
+<section id="content">
+<p>* Acompanhe o total de acessos da URL encurtada em tempo real, não precisa se registrar.</p>
+</section>
+<div id='EncuBR_Adunit_01'></div>
+</main>
+<footer>
+<div id="footerbox">
+<div>© 2019 encod.me - Ferramenta para encurtar um link longo.</div>
+<ul>
+<li><a href="https://encod.me/">Início</a></li>
+<li>|</li>
+<li><a href="contador-de-cliques-da-url">Contador de Cliques</a></li>
+<li>|</li>
+<li><a href="denunciar-uma-url">Denunciar URL</a></li>
+<li>|</li>
+<li><a href="politica-de-privacidade">Política de Privacidade</a></li>
+<li>|</li>
+<li><a href="contato">Contato</a></li>
+</ul>
+</div>
+</footer>
+<script>
+  WebFontConfig = {
+    google: { families: [ 'Lato:400,700', 'Maven+Pro:400,700' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+</body>
+</html>
